@@ -1,6 +1,9 @@
 import { useState } from "react"
+import { Badge } from "@/components/ui/badge"
 
+// PropertyCard displays a single property listing
 function PropertyCard({ image, location, distance, dates, price, rating }) {
+  // Track whether user has liked this property
   const [liked, setLiked] = useState(false)
 
   return (
@@ -11,6 +14,11 @@ function PropertyCard({ image, location, distance, dates, price, rating }) {
           alt={location}
           className="w-full h-64 object-cover rounded-xl"
         />
+        {/* Guest favourite badge using ShadCN */}
+        <Badge className="absolute top-3 left-3 bg-white text-black font-semibold">
+          Guest favourite
+        </Badge>
+        {/* Heart/like button */}
         <button
           onClick={() => setLiked(!liked)}
           className="absolute top-3 right-3 text-xl"
