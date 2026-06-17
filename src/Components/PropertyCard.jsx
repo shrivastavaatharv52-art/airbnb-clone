@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "@/Components/ui/badge"
 
 // PropertyCard displays a single property listing
 function PropertyCard({ image, location, distance, dates, price, rating }) {
