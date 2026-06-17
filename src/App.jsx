@@ -1,7 +1,7 @@
-import Navbar from './components/Navbar'
-import CategoryBar from './components/CategoryBar'
-import PropertyCard from './components/PropertyCard'
-import Footer from './components/Footer'
+import Navbar from './Components/Navbar'
+import CategoryBar from './Components/CategoryBar'
+import PropertyCard from './Components/PropertyCard'
+import Footer from './Components/Footer'
 
 const properties = [
   {
